@@ -58,6 +58,10 @@ body{
     justify-content: space-between;
 }
 
+.brand{
+    color:violet;
+}
+
 /* TITOLI E PARAGRAFI */
 h1{
     font-family: 'Staatliches', sans-serif;
@@ -67,16 +71,21 @@ h1{
 
 h2{
     font-family: 'Staatliches', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600; /*modifica lo spessore*/
-
+    font-size: 56px;
+    font-weight: 700; /*modifica lo spessore*/
 }
 
 h3{
     font-family: 'Staatliches', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500; /*modifica lo spessore*/
+    font-size: 24px;
+    line-height: 43px;
+    font-weight: 600; /*modifica lo spessore*/
+}
 
+h4,h6{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 p{
@@ -166,15 +175,91 @@ p{
 }
 
 /* FOOTER */
-#footer{
 
-    margin-top: 40px;
-    background-color:  white;
-    height: 280px;
-    width: 100%;
+footer .copyright{
+
+    padding: 15px;
+    font-size: 12px;
+    color: #D2D2D2;
+}
+
+.community-container h3{
+    font-weight: 700;
+    font-size: 96px;
+    margin-top: 35px;
+    line-height: 110px;
+    margin-bottom: 56px;
 
 }
 
+.community-container p{
+    font-size: 24px;
+    line-height: 31px;
+    color:#D2D2D2
+}
+
+
+.community-container .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap:51px 116px;
+
+}
+
+.icons-wrapper{
+    gap:31px;
+    font-size: 31px;
+}
+.community-container form{
+
+    border-radius: 100px;
+    width: 368px;
+    height: 56px;
+    overflow: hidden;
+    background-color: #D2D2D2;
+}
+
+.community-container input{
+    width: 100%;
+    border:none;
+    outline: none;
+    color:black;
+    font-weight: 500;
+    background-color: #f8f8ff;
+    padding-left: 20px;
+}
+
+.community-container button[type="submit"]{
+    border:none;
+    background-color: #D2D2D2;
+    padding: 10px 16px;
+    font-weight: 600;
+    width: 110px;
+    cursor: pointer;
+    transition: all 175ms ease;
+
+}
+
+.community-container button[type="submit"]:hover{
+  color:white;
+  background:blueviolet;
+
+}
+
+.footer-link-container{
+    margin-top: 180px;
+    gap:117px;
+}
+
+footer .grid-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    gap:51px 130px;
+    margin-bottom: 60px;
+
+}
 
 /* MEDIA QUERY DA 0 A 480 */
 
