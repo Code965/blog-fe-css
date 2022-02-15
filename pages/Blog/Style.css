@@ -17,7 +17,7 @@
 
 a{
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 ul{
@@ -25,7 +25,7 @@ ul{
 }
 
 body{
-    background-color: gray;
+     background-color: white;
     font-family: "Montserrat", sans-serif; 
     /* FONT DI BASE */
 }
@@ -96,68 +96,16 @@ p{
 
 /* NAVBAR */
 
-.logo{
-    width: 60px;
-    height: 60px;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: white;
-    color: grey;
-    font-size: 14px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: gray;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #D2D2D2;
-    margin-left: 10px;
-      background-color: #ddd;
-    }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-
-  .dropdown:hover .dropbtn {background-color: none;}
-  
 #navbar{
-    background-color: white;
+    background-color: #1B4965;
     width: 100%;
     height: 72px;
-   
 }
 
 #nav-list li{
     padding: 16px 10px;
     border-radius: 16px;
-    color: gray;
+    color: white;
     font-weight: 500;
     font-size: 14px;
 }
@@ -177,20 +125,64 @@ p{
 }
 
 .active-link:hover{
-    background-color: #D2D2D2;
+    background-color: black;
     margin-left: 10px;
 }
 
-
-/* header */
-
-
-
-.container-header{
-    max-width: 1700px;
-    margin:auto;
-    width: calc(100% - 48px);
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-color: white;
 }
+
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+/* Dropdown Button */
+.dropbtn {
+    font-size: 14px;
+    border: none;
+    color: white;
+    background-color: #1B4965;
+  }
+ 
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: gray;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+        background-color: #1B4965;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #1B4965;
+  }
+  
+
 
 /* MAIN ARTICOLI */
 
@@ -202,6 +194,7 @@ p{
     background-color: white;
     flex-grow: 1;
     flex-shrink: 0;
+    margin-top: 100px;
 }
 
 #main-article .img-container .img{
@@ -214,24 +207,32 @@ p{
     position: absolute;
     width: 100%;
     height: 100%;
-    float: right;
 
-    
 }
 
+#main-article .img-container2{
+  float: left;
+}
+
+#main-article .img-container2 .img2{
+   
+    width: 300px;
+    height: 300px;
+
+}
 
 #fixed-article{
-    margin-top: 56px;
     margin-bottom: 56px;
 }
 
 #main-article{
     gap:151px;
+    
 }
 
 #main-article .text-container{
     flex-direction: column;
-    gap:24px
+    gap:24px;
 
 }
 
@@ -304,34 +305,42 @@ p{
    color: #D2D2D2;
 
   }
-  
-  main .content-section:nth-child(0) {
-    background-color: #D2D2D2;
-  }
-  
-main .content-section:nth-child(2){
-    background-color: #f8f8ff;
+
+  main .content-section:nth-child(2){
+    background-color: #1B4965;
 }
 main .content-section:nth-child(3){
-    background-color: #D2D2D2;
-}
-main .content-section:nth-child(4){
-    background-color: #f8f8ff;
+    background-color: white;
 }
 
+main .content-section:nth-child(4){
+    background-color: #1B4965;
+}
+ main .content-section:nth-child(5){
+     background-color: white;
+ }
+
+
+
 /* FOOTER */
+
+#fot{
+    width: 100%;
+    background-color: #1B4965;
+}
 
 footer .copyright{
 
     padding: 15px;
     font-size: 12px;
-    color: #D2D2D2;
+    color: black;
 }
 
 .community-container h3{
     font-weight: 700;
     font-size: 96px;
     margin-top: 35px;
+    padding-top: 30px;
     line-height: 110px;
     margin-bottom: 56px;
 
@@ -340,7 +349,7 @@ footer .copyright{
 .community-container p{
     font-size: 24px;
     line-height: 31px;
-    color:#D2D2D2
+    color:white;
 }
 
 
@@ -355,6 +364,7 @@ footer .copyright{
 .icons-wrapper{
     gap:31px;
     font-size: 31px;
+    color:white
 }
 .community-container form{
 
@@ -409,7 +419,7 @@ footer .grid-list{
 .grid-list ul{
     margin-top: 17px;
     font-size: 14px;
-    color: #D2D2D2;
+    color: white;
 }
 
 .grid-list ul li{
