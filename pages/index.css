@@ -17,7 +17,7 @@
 
 a{
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 ul{
@@ -25,7 +25,7 @@ ul{
 }
 
 body{
-    background-color: gray;
+     background-color: white;
     font-family: "Montserrat", sans-serif; 
     /* FONT DI BASE */
 }
@@ -95,48 +95,55 @@ p{
 
 
 /* NAVBAR */
+
 #navbar{
-    background-color: white;
+    background-color: #1B4965;
     width: 100%;
-    height: 72px;   
-    position: fixed;
+    height: 72px;
 }
 
 #nav-list li{
     padding: 16px 10px;
     border-radius: 16px;
-    color: gray;
+    color: white;
     font-weight: 500;
     font-size: 14px;
+}
+
+#navbar input{
+    
+    border-radius: 16px;
+    max-width: 367px;
+    width: 100%;
+    height: 48px;
+    border: none; /*mi toglie il bordo*/
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+    color: black;
 
 }
 
 .active-link:hover{
-    background-color: #D2D2D2;
+    background-color: black;
     margin-left: 10px;
 }
 
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-color: white;
+}
 
-
+  
 /* header */
-
-
 .container-header{
     max-width: 1700px;
     margin:auto;
     width: calc(100% - 48px);
+    margin-top: 120px;
 }
-
-.box{
-    padding-top: 120px;
-}
-#claim{
-    width: 99%;
-    background-color: white;
-    margin-left: 10px;
-    border-radius: 16px;
-}
-
 
 .container-img{
     float: left;
@@ -150,43 +157,86 @@ p{
 
 /* MAIN */
 
-.container-main{
-    max-width: 1700px;
-    margin:auto;
-    width: calc(100% - 48px);
+.wrapper{
+
+    padding-top: 30px;
 }
 
-#claim2{
-    background-color:  white;
-    width: 99%;
-    margin-top: 40px;
+.box-biografia{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.box-article{
+    display: grid;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.post{
+    width: 100%;
+    margin: 40px 20px 0 20px;
+    background-color: #1B4965;
+    border-radius: 30px;
+}
+
+.post h1{
+    color: white;
+}
+.post p{
+    color: white;
+}
+
+.container-post{
+    padding: 10px 10px 10px 10px;
+
+}
+
+.img-container{
+    float: left;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.img{
+    border-radius: 90%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.lavori-container{
+    flex-wrap: wrap;
+}
+.lavoro{
+    padding: 50px;
+    background-color: #1B4965;
+    margin-top: 10px;
     margin-left: 10px;
-    border-radius: 16px;
-
+    border-radius: 10px;
 }
 
-#claim3{
-    background-color:  white;
-    height: 280px;
-    width: 99%;
-    margin-top: 40px;
-    margin-left: 10px;
-    border-radius: 16px;
-}
 
 /* FOOTER */
+
+#fot{
+    width: 100%;
+    background-color: #1B4965;
+}
 
 footer .copyright{
 
     padding: 15px;
     font-size: 12px;
-    color: #D2D2D2;
+    color: black;
 }
 
 .community-container h3{
     font-weight: 700;
     font-size: 96px;
     margin-top: 35px;
+    padding-top: 30px;
     line-height: 110px;
     margin-bottom: 56px;
 
@@ -195,7 +245,7 @@ footer .copyright{
 .community-container p{
     font-size: 24px;
     line-height: 31px;
-    color:#D2D2D2
+    color:white;
 }
 
 
@@ -210,6 +260,7 @@ footer .copyright{
 .icons-wrapper{
     gap:31px;
     font-size: 31px;
+    color:white
 }
 .community-container form{
 
@@ -261,7 +312,28 @@ footer .grid-list{
 
 }
 
-/* MEDIA QUERY DA 0 A 480 */
+.grid-list ul{
+    margin-top: 17px;
+    font-size: 14px;
+    color: white;
+}
+
+.grid-list ul li{
+    cursor: pointer;
+    padding:8.5px;
+    transition: all 150ms  ease-in;
+}
+.grid-list ul li:hover{
+    /* aggiunge la transizione di far vedere il link */
+    text-decoration: underline;
+    color: #D2D2D2;
+}
+
+
+/* MEDIA QUERY */
+
+
+
 
 @media (max-width: 480px) {
 
