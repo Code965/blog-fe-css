@@ -1,7 +1,9 @@
 /*FONT IMPORTATI*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
+/* PARAGRAFI UBUNTU */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Staatliches&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
 /* STYLING DI BASE */
 *{
     margin:0;
@@ -90,7 +92,7 @@ h4,h6{
 
 p{
     font-family: "", sans-serif; 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -102,7 +104,9 @@ p{
     height: 72px;
 }
 
+
 #nav-list li{
+    
     padding: 16px 10px;
     border-radius: 16px;
     color: white;
@@ -142,30 +146,65 @@ p{
 /* creo il mio grid container dove gli dico come posizionare le colonne ecc */
 .curriculum-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px;
     margin-top: 40px;
     justify-items:center;
 }
 
-
-
 .items{
-
     padding: 30px;
-    width: 70%;
+    border-radius: 20px;
     background-color: #D2D2D2;
-   
+}
+
+#section-principale .items a{
+    color: black;
 }
 
 .items2{
 
-    padding: 30px;
-    background-color: white;
-    margin-right: 50px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color:#1B4965 ;
+    margin-right: 40px;
+    
 }
 
 .hr-items2{
-    width: 60%;
+    width: 100%;
+}
+
+#section-principale .items2 p{
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    text-align: left;
+}
+
+.wrap-info{
+    text-align: center;
+}
+
+#section-principale .wrap-info h3{
+    margin-top: 10px;
+}
+
+
+#section-principale ul {
+   margin-bottom: 40px;
+}
+
+#section-principale ul p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+#section-principale ul i{
+    font-size: 25px;
+    margin-right: 10px;
 }
 
 #section-principale .container-img{
