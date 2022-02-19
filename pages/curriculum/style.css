@@ -102,6 +102,8 @@ p{
     background-color: #1B4965;
     width: 100%;
     height: 72px;
+    position: fixed;
+
 }
 
 
@@ -139,16 +141,19 @@ p{
     margin-right: 10px;
     background-color: white;
 }
-
+/* HEADER */
 /* MAIN */
 
 
 /* creo il mio grid container dove gli dico come posizionare le colonne ecc */
+
+#section-principale{
+    padding-top: 92px;
+}
 .curriculum-grid{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 5px;
-    margin-top: 40px;
     justify-items:center;
 }
 
